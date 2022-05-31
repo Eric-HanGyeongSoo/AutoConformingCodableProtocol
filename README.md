@@ -13,9 +13,9 @@ struct Example: Decodable {
 }
 ```
 
-select from `let id: Int` to `let isGood: Bool`
+Drag and select from `let id: Int` to `let isGood: Bool`
 
-And Editor > SourceEditorExtension > SourceEditorCommand
+Then Editor > SourceEditorExtension > SourceEditorCommand
 
 ```Swift
 struct Example: Decodable {
