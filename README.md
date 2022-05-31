@@ -5,7 +5,7 @@ convenience tool for a struct conforming Codable protocol
 # Decodable
 
 ## Example
-```
+```Swift
 struct Example: Decodable {
 	let id: Int
 	let name: String
@@ -17,7 +17,7 @@ select from `let id: Int` to `let isGood: Bool`
 
 And Editor > SourceEditorExtension > SourceEditorCommand
 
-```
+```Swift
 struct Example: Decodable {
   let id: Int
   let name: String
