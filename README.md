@@ -2,7 +2,7 @@
 
 Convenience tool for a struct conforming Codable protocol
 
-⚠️ Now only Conforming Decodable Protocol is developed, Conforming Encodable Protocol is in progress
+⚠️ Only Conforming Decodable Protocol is developed for now, and Conforming Encodable Protocol is in progress
 
 # Decodable
 
