@@ -1,8 +1,8 @@
 # AutoConformingCodableProtocol
 
-convenience tool for a struct conforming Codable protocol
+Convenience tool for a struct conforming Codable protocol
 
-Now only Conforming Decodable Protocol is developed, Conforming Encodable Protocol is in progress
+⚠️ Now only Conforming Decodable Protocol is developed, Conforming Encodable Protocol is in progress
 
 # Decodable
 
