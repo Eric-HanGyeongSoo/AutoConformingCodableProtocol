@@ -10,13 +10,14 @@
 		461FAAD428459A5A00F27CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461FAAD328459A5A00F27CCC /* AppDelegate.swift */; };
 		461FAAD828459A5B00F27CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461FAAD728459A5B00F27CCC /* Assets.xcassets */; };
 		461FAAE928459A6A00F27CCC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461FAAE828459A6A00F27CCC /* Cocoa.framework */; };
-		461FAAEB28459A6A00F27CCC /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461FAAEA28459A6A00F27CCC /* XcodeKit.framework */; };
 		461FAAEE28459A6A00F27CCC /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461FAAED28459A6A00F27CCC /* SourceEditorExtension.swift */; };
 		461FAAF028459A6A00F27CCC /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461FAAEF28459A6A00F27CCC /* SourceEditorCommand.swift */; };
 		461FAAF528459A6A00F27CCC /* SourceEditorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 461FAAE628459A6A00F27CCC /* SourceEditorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		461FAAFC28459AA600F27CCC /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461FAAFB28459AA600F27CCC /* Generator.swift */; };
 		461FAAFE28459AAF00F27CCC /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461FAAFD28459AAF00F27CCC /* Variable.swift */; };
 		461FAB002845A5AB00F27CCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461FAAFF2845A5AB00F27CCC /* Main.storyboard */; };
+		4643EEF12845AF7C00364FFD /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461FAAEA28459A6A00F27CCC /* XcodeKit.framework */; };
+		4643EEF22845AF7C00364FFD /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 461FAAEA28459A6A00F27CCC /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,17 @@
 				461FAAF528459A6A00F27CCC /* SourceEditorExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4643EEF32845AF7C00364FFD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4643EEF22845AF7C00364FFD /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -73,7 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				461FAAE928459A6A00F27CCC /* Cocoa.framework in Frameworks */,
-				461FAAEB28459A6A00F27CCC /* XcodeKit.framework in Frameworks */,
+				4643EEF12845AF7C00364FFD /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +181,7 @@
 				461FAAE228459A6A00F27CCC /* Sources */,
 				461FAAE328459A6A00F27CCC /* Frameworks */,
 				461FAAE428459A6A00F27CCC /* Resources */,
+				4643EEF32845AF7C00364FFD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

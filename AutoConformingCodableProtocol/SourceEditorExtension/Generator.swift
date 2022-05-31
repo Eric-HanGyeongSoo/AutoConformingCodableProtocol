@@ -30,7 +30,7 @@ enum Generator {
   }
   
   private static func argument(variable: Variable) -> String {
-    return "self.\(variable.name) = try container.decode(\(variable.type).self, forKey: .\(variable.name)"
+    return "self.\(variable.name) = try container.decode(\(variable.type).self, forKey: .\(variable.name))"
   }
   
   private static func caseArgument(variable: Variable) -> String {
@@ -50,7 +50,7 @@ enum Generator {
   }
   
   private static func generateInit(_ arguments: [String], _ indentation: String) -> [String] {
-    var result: [String] = ["init(from: decoder: Decoder) throws {"]
+    var result: [String] = ["init(from decoder: Decoder) throws {"]
     result.append(indentation + "let container = try decoder.container(keyedBy: CodingKeys.self)")
     
     arguments.forEach { argument in
