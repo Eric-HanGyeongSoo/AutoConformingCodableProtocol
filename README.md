@@ -1,2 +1,2 @@
-# auto_conforming_codable_protocol
+# AutoConformingCodableProtocol
 convenience tool for a struct conforming Codable protocol
